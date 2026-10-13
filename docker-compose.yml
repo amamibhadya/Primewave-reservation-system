@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: rrms
+      POSTGRES_PASSWORD: rrms
+      POSTGRES_DB: rrms
+    ports:
+      - "5432:5432"
+    volumes:
+      - rrms_pg:/var/lib/postgresql/data
+volumes:
+  rrms_pg:
