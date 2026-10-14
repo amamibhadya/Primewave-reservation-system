@@ -1,4 +1,4 @@
-// End-to-end API checks. Start the app first (npm run dev), then: npm run test:api
+
 const BASE = process.env.BASE_URL || "http://localhost:3000";
 let passed = 0, failed = 0;
 
